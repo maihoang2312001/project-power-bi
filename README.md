@@ -76,9 +76,13 @@ df_mar.groupby("pickup_hour")["km_per_min"].mean().sort_index()
 plt_data = df_mar.groupby("pickup_hour")["km_per_min"].mean().sort_index()
 # Plot
 fig, ax = plt.subplots(figsize=(7, 3))
+
 plt_data.plot.bar(ax=ax)
+
 ax.set_ylabel("Speed (km / min)")
+
 ax.set_title("Average speed (km / min) by pickup hour")
+
 plt.show()
 
 
