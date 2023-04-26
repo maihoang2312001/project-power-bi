@@ -1,4 +1,87 @@
-# project-power-bi
+# project
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = sns.load_dataset("taxis")
+
+df.head(2)
+
+df.tail(2)
+
+df.dtypes 
+
+
+df.shape
+
+df["pickup"].agg(["min", "max"])
+
+cond = (df["pickup"] >= "2019-03-01") & (df["pickup"] < "2019-04-01")
+df_mar = df[cond].copy()
+
+
+df_mar["pickup"].agg(["min", "max"])
+
+df_mar.shape[0]
+
+df_mar["pickup"].dt.day_name().value_counts()
+
+df_mar["color"].nunique()
+
+df_mar["color"].unique().tolist()
+
+df["payment"].unique().tolist()
+
+df_mar["payment"].value_counts(normalize=True) * 100
+
+df_mar["tip"].mean()
+
+df_mar["tip"].median()
+
+df_mar.groupby("payment")["tip"].mean() 
+
+df_mar["passengers"].mean()
+
+df_mar["fare"].sum()
+
+df_mar["pickup"].dt.hour.value_counts().head(5)
+
+df.head(2)
+
+df_mar["same_borough"] =(df_mar["pickup_borough"] == df_mar["dropoff_borough"]).astype(int)
+
+df_mar[["pickup_borough", "dropoff_borough", "same_borough"]].head()
+
+df_mar["same_borough"].value_counts()
+
+cond = df_mar["pickup_borough"] == "Manhattan"
+df_mar.loc[cond, "distance"].mean()
+
+df_mar["duration"] = (df_mar["dropoff"] - df_mar["pickup"]).dt.total_seconds() / 60.
+
+df_mar.groupby("same_borough")["duration"].mean()
+
+df_mar["pickup_hour"] = df_mar["pickup"].dt.hour
+
+df_mar["km_per_min"] = df_mar["distance"] / df_mar["duration"]
+
+df_mar.groupby("pickup_hour")["km_per_min"].mean().sort_index() 
+
+# Data to plot
+plt_data = df_mar.groupby("pickup_hour")["km_per_min"].mean().sort_index()
+# Plot
+fig, ax = plt.subplots(figsize=(7, 3))
+plt_data.plot.bar(ax=ax)
+ax.set_ylabel("Speed (km / min)")
+ax.set_title("Average speed (km / min) by pickup hour")
+plt.show()
+
+
+
+
+
 FIFA WORLD CUP 2018
 
 OVERVIEW
