@@ -1,4 +1,6 @@
 # project
+# Project Python
+# Import các gói trước khi làm bài
 
 import numpy as np
 
@@ -7,8 +9,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 import seaborn as sns
+# Load dataset mẫu "taxis" trong gói seaborn vào biến df
 
 df = sns.load_dataset("taxis")
+## In ra 2 dòng đầu và 2 dòng cuối
+
 
 df.head(2)
 
