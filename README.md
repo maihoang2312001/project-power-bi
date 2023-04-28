@@ -112,9 +112,9 @@ plt.show()
 
 
 
-FIFA WORLD CUP 2018
+## FIFA WORLD CUP 2018
 
-OVERVIEW
+### OVERVIEW
 <img width="960" alt="2023-04-05" src="https://user-images.githubusercontent.com/114405595/229874476-03af0411-e0c7-44c1-8776-209c6f55c78b.png">
 
 <img width="960" alt="2023-04-05 (1)" src="https://user-images.githubusercontent.com/114405595/229870060-d2e312c5-cdf0-4bf3-9ff8-d6dbc29c3d86.png">
@@ -127,9 +127,9 @@ OVERVIEW
 <img width="960" alt="2023-04-05 (9)" src="https://user-images.githubusercontent.com/114405595/229871172-948fcb3d-6331-4f28-810d-02e78708c550.png">
 
 
-BANK MARKETING ANALYST
+## BANK MARKETING ANALYST
 
-OVERVIEW
+### OVERVIEW
 <img width="960" alt="2023-04-05 (10)" src="https://user-images.githubusercontent.com/114405595/229871492-cfdbc45c-1660-4b0d-a4d6-1079f0e517c5.png">
 
 <img width="960" alt="2023-04-05 (11)" src="https://user-images.githubusercontent.com/114405595/229871519-7b948858-d173-4938-9dea-02d151d4e49f.png">
