@@ -114,32 +114,32 @@ plt.show()
 
 ## FIFA WORLD CUP 2018
 ### FIFA-World-Cup-Data-Analysis
-FIFA world cup between 2002 - 2018 data analysis using Power BI
+FIFA world cup between 2018 data analysis using Power BI
 
-#Transformation Downloading the dataset from the dataset online. CSV file and export it into the PowerBI. Tranferring the file into the Power Query Editor for transformation and verifying the data types and columns. Adjusting the columns and data data types where necessary. Appemding all the similar tables together inorder to have a complete table of the world cup dataset from 2002-2018. After transformation, I closed and applied and created a rolling calender using DAX function from the data view.
+#Transformation 
+Downloading the dataset from the dataset online. CSV file and export it into the PowerBI. Tranferring the file into the Power Query Editor for transformation and verifying the data types and columns. Adjusting the columns and data data types where necessary. Appemding all the similar tables together inorder to have a complete table of the world cup dataset from 2018. After transformation, I closed and applied and created a rolling calender using DAX function from the data view.
 
 I navigated to the model view and crested relationships with the data linking the facts tables to the dimension table.
 
 Having modelled the data, I created measures with DAX and created my Dashboard. Joining several tiles together, measures and using slicers to navigate and filter through the dashboard.
-### The Story: FIFA - Football World Cup Case Study ( Year 2002 -2018)
-The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA), the sport's global governing body. The championship has been awarded every four years since the inaugural tournament in 1930, except in 1942 and 1946 when it was not held because of the Second World War. The current champion is France, which won its second title at the 2018 tournament in Russia.
+### Story: FIFA Case Study - FIFA World Cup (2018)
+The FIFA World Cup, commonly known simply as the FIFA World Cup, is an international football tournament contested by the senior men's national teams of members of the Football Confederation. International Football (FIFA), the sport's global governing body. Aggregate data set of statistics of players at Clubs in the 2017-2018 season before the players participated in the 2018 World Cup taking place in Russia.
 
-The 21 World Cup tournaments have been won by eight national teams. Brazil have won five times, and they are the only team to have played in every tournament. The other World Cup winners are Germany and Italy, with four titles each; Argentina, France, and inaugural winner Uruguay, with two titles each; and England and Spain, with one title each.
+The 2018 World Cup has 32 national teams, but the dataset only mentions 29 teams. The remaining 3 teams will be determined after the intercontinental Play-offs to determine the final 3 names to participate in the tournament in Russia. Germany is currently the highest-rated team capable of winning the tournament as they are the defending World Cup winners in 2014, topping the FIFA rankings and having players playing in the top clubs in Europe. Europe. Besides, teams such as England, France, Brazil, Argentina ... are also highly appreciated in this year's tournament for the chance to win the championship.
 ### Introduction
-This project involves generating insight from 5 years dataset of the FIFA world cup tournament participated by 59 countries from different continents of the world. The following questions was asked to generate clear insight;
+This project involved generating insight from a dataset containing information on the performance of the players present at the 2018 World Cup around the world before the tournament started. The following questions were asked to generate clear insight;
 
-How many countries have played in the world cup (5 Years)?
-Get the total games played; win, loss, Goals for/against.
-The country with the highest and lowest appearance in the last five years?
-The country with the highest and lowest games played.
-The country with the highest and lowest games won.
-The country with the highest and lowest games lost.
-The country with the highest and lowest goals for?
-The country with the highest and lowest goals against?
-The country with the highest and lowest goals difference?
-The country with the highest and lowest points?
+1. Ranking the team according to the FIFA index?
+2. Top strongest teams based on player stats?
+3. Top oldest and youngest football team?
+4. Top teams with the best attack, the best defense, the best midfield?
+5. Comparison between the big guys (top 1, 2 FIFA)?
+6. Compare stats between superstars (Ronaldo, Messi)?
 ### Findings
-In the given dataset, 59 countries played the FIFA world cup. 640 games were played, win and loss games were 247 games respectively and total goals were 793. The countries with the highest and lowest games played were; Germany played 13 games while Angola and 13 other countries played total games of 3 each. The countries with the highest and lowest games won were Germany and Angola with total games won in 5years as 22 and 0 respectively. The countries with the highest and lowest games lost were South Korea and Angola, 9 and 1 respectively. The countries with the highest and lowest number of goals were Germany with 64 goals and Angola with 1 goal. Brazil has the highest number of goals against with a total number of 27 and Angola has the lowest goals-against against 2. Germany has the highest points of 69 while China PR has the lowest point of 0.
+In the given dataset, 29 national teams will participate in the FIFA World Cup and 3 teams will be determined after the intercontinental Play-off matches. 348 players from 151 clubs will participate in the World Cup held in Russia. Germany and Brazil are the 2 teams ranked 1st and 2nd in the FiFa Ranking. Germany has 1544 FIFA points and Brazil has 1384 FIFA points. Russia and Japan are the two teams with the lowest FIFA scores. Russia has 493 points and Japan has 528 points
+
+
+  The countries with the highest and lowest number of matches are; Germany played 13 matches while Angola and 13 other countries each played a total of 3 matches. The countries with the highest and lowest number of wins are Germany and Angola with total wins over 5 years at 22 and 0. respectively. The countries with the highest and lowest losses are respectively. Korea and Angola, 9 and 1. The countries with the highest and lowest number of goals are Germany with 64 goals and Angola with 1 goal. Brazil has the most goals conceded with a total of 27 and Angola has the least with 2. Germany has the highest score of 69 while China PR has the lowest score of 0.
 ### Tailored Analysis
 The total goal scored in the 5 years FIFA world cup dataset was 793 goals, of which; the highest and lowest goals was scored in 2014 and 2010 total goals of 171 and 145 respectively. However, in 2018, 2002, and 2006 goals scored were 169, 161, and 147 respectively.
 ### Team France
